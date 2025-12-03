@@ -7,7 +7,7 @@
   </head>
   <body>
     <form action="/register" method="post">
-      <fieldset style="width: 500px;">
+      <fieldset style="width: 500px">
         <legend>ข้อมูลส่วนตัว</legend>
         <!-- first name -->
         <label for="fname">First Name:</label>
@@ -22,14 +22,14 @@
         <label for="birthday">Birthdate:</label>
         <input type="date" id="birthday" name="birthday" required /><br />
         <!-- gender  radio buttons-->
-         <fieldset style="width: 450px">
-            <legend>Gender</legend>
-            <input type="radio" id="male" name="gender" value="male" checked />
-            <label for="male">ชาย</label>
-            <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">หญิง</label>
-            <input type="radio" id="other" name="gender" value="other" />
-            <label for="other">อื่นๆ</label><br />
+        <fieldset style="width: 450px">
+          <legend>Gender</legend>
+          <input type="radio" id="male" name="gender" value="male" required/>
+          <label for="male">ชาย</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">หญิง</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">อื่นๆ</label><br />
         </fieldset>
         <!-- country dropdown -->
         <label for="country">ประเทศ:</label>
@@ -44,7 +44,8 @@
         ><br />
         <!-- information -->
         <label for="info">ข้อมูลเพิ่มเติม:</label><br />
-        <textarea id="info" name="info" rows="4" cols="45" required></textarea><br />
+        <textarea id="info" name="info" rows="4" cols="45" required></textarea
+        ><br />
         <!-- agreements -->
         <input
           type="checkbox"
