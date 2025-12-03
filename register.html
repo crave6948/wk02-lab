@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <form action="/register" method="post">
+      <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+        <!-- first name -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="first_name" required />
+        <!-- last name -->
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="last_name" required /><br />
+        <!-- email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <!-- birthday -->
+        <label for="birthday">Birthdate:</label>
+        <input type="date" id="birthday" name="birthday" required /><br />
+        <!-- gender  radio buttons-->
+         <fieldset style="width: 450px">
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male" checked />
+            <label for="male">ชาย</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">หญิง</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">อื่นๆ</label><br />
+        </fieldset>
+        <!-- country dropdown -->
+        <label for="country">ประเทศ:</label>
+        <select id="country" name="country" required>
+          <option value="unselect" selected>-- เลือก ประเทศ --</option>
+          <option value="uk">United Kingdom</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+          <option value="usa">United States</option>
+          <option value="th">Thailand</option>
+          <option value="other">Other</option></select
+        ><br />
+        <!-- information -->
+        <label for="info">ข้อมูลเพิ่มเติม:</label><br />
+        <textarea id="info" name="info" rows="4" cols="45" required></textarea><br />
+        <!-- agreements -->
+        <input
+          type="checkbox"
+          id="agreements"
+          name="accept_terms"
+          value="agreements"
+          required
+        />
+        <label for="agreements">ฉันยอมรับเงื่อนไขการใช้บริการ</label><br />
+      </fieldset>
+      <button type="submit">ส่งข้อมูล</button>
+      <button type="reset">ยกเลิก</button>
+    </form>
+  </body>
+</html>
